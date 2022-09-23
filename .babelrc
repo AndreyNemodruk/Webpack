@@ -1,0 +1,25 @@
+{
+  "plugins": ["@babel/plugin-proposal-class-properties"],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "corejs": 3,
+        "useBuiltIns":"usage",
+        "modules": false,
+        "debug": true,
+        // "targets": {
+        //   "edge": "18",
+        //   "chrome": "74",
+        //   "ie": "11"
+        // }
+        "targets": [
+          "last 2 chrome versions",
+          "last 2 firefox versions",
+          "last 2 ios versions"
+        ]
+        //"targets": ["> 0.3%", "not ie >0"]
+      }
+    ], "@babel/react"
+  ]
+}
